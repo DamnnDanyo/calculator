@@ -16,3 +16,19 @@ const multipy = function (a, b) {
     return a * b
 };
 
+//operate function//
+
+switch (operate) {
+    case add:
+        operate = add(a,b)
+        break;
+    case minus:
+        operate = minus(a,b)
+        break;
+    case divide:
+        operate = divide(a,b)
+        break;
+    case multipy:
+        operate = multipy(a,b)
+        break;
+}
