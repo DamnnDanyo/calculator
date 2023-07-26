@@ -17,6 +17,10 @@
     margin-bottom: 0px;
 }
 #button-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 button {
