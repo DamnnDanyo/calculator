@@ -16,22 +16,23 @@ body {
 #screen {
     display: flex;
     width: 248px;
-    height: 70px;
+    height: 80px;
     border: 1px solid black;
     margin-top: 10px;
-    margin-bottom: 0px;
 }
 #button-body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 button {
     width: 58px;
     height: 60px;
     margin: 3px;
+    border-radius: 11px;
 }
 
 #button-row {
