@@ -2,4 +2,37 @@
     display: flex;
     width: 300px;
     height: 470px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+#screen {
+    display: flex;
+    width: 248px;
+    height: 70px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+#button-body {
+}
+
+button {
+    width: 58px;
+    height: 60px;
+    margin: 3px;
+}
+
+#button-row {
+    display: flex;
+}
+
+#clear {
+    width: 123px;
+}
+
+#delete {
+    width: 123px;
 }
