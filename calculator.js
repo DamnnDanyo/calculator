@@ -35,18 +35,49 @@ switch (operate) {
 
 //populate display function//
 
-
-
-const btns = document.querySelectorAll('button');
+const btns = document.querySelectorAll('button.number, button.op');
+const clearButton = document.querySelector('#clear');
+const deleteButton = document.querySelector('#delete');
+const pointButton = document.querySelector('button.decimal');
 const topText = document.querySelector('#text-long');
 const bottomText = document.querySelector('#text-short');
 
+let equationNumber = 0;
+let firstNumber = '';
+let secondNumber = '';
+let currentOp = null;
+let resetScreen = false;
+
 btns.forEach((btn) =>{
-    btn.addEventListener('click', () => {
-    const equation = document.createElement('p');
+    btn.addEventListener('click', () => displayNumber(btn.textContent));
+});
+
+function  displayNumber(number){
+    if (bottomText.textContent === '0' || resetScreen)
+    zeroScreen()
+    bottomText.textContent += number
+};
+
+function zeroScreen() {
+    bottomText.textContent = ''
+    resetScreen = false
+};
+
+function clear() {
+    bottomText.textContent = '0'
+    topText.textContent = ''
+    firstNumber = ''
+    secondNumber = ''
+    currentOp = null
+}
+
+
+
+
+/*        const equation = document.createElement('p');
     const numberEntered = document.createElement('p');
-    numberEntered.textContent = btn.className;
+    numberEntered.textContent = btn.id;
     equation.textContent = 
-    topText.appendChild(numberEntered);
-})
-})
+    bottomText.appendChild(numberEntered);
+    });
+});*/
