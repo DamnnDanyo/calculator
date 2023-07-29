@@ -84,7 +84,7 @@ function evaluate() {
 };
 
 function roundNumber(number) {
-    return Math.round(number * 1000) / 1000
+    return Math.round(number * 100) / 100
   };
 
 //operate function//
