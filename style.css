@@ -10,6 +10,9 @@ body {
     display: flex;
     justify-content: center;
     background-color: burlywood;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #body {
@@ -22,6 +25,16 @@ body {
     border: 1px solid black;
     box-shadow: 10px 10px gray;
     background-color: darkslategray;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    justify-content: center;
+    font-size: 13px;
 }
 
 #screen {
